@@ -10,7 +10,7 @@ class IndexController extends Controller
     public function show()
     {
         $menu = MenuItem::all()->sortBy('sort_by');
-        return view('store.index', ['menu' => $menu]);
+        return view(env('THEME').'.index', ['menu' => $menu]);
     }
 
     public function admin()

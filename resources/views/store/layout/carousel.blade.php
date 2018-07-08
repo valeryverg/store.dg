@@ -1,10 +1,10 @@
 @section('carousel')
-    <script type="text/javascript" src="{{ asset('js/jquery-1-4-2.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery-ui.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/showhide.js') }}"></script>
-    <script type="text/JavaScript" src="{{ asset('js/jquery.mousewheel.js') }}"></script>
+    <script type="text/javascript" src="{{ asset(env('THEME').'/js/jquery-1-4-2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset(env('THEME').'/js/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset(env('THEME').'/js/showhide.js') }}"></script>
+    <script type="text/JavaScript" src="{{ asset(env('THEME').'/js/jquery.mousewheel.js') }}"></script>
     <!-- Load the CloudCarousel JavaScript file -->
-    <script type="text/JavaScript" src="{{ asset('js/cloud-carousel.1.0.5.js') }}"></script>
+    <script type="text/JavaScript" src="{{ asset(env('THEME').'/js/cloud-carousel.1.0.5.js') }}"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -37,21 +37,21 @@
         <div id="carousel1" style="width:960px; height:280px;background:none;overflow:scroll; margin-top: 20px">
             <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
             <!-- You can place links around these images -->
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/01.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/01.jpg') }}"
                                             alt="CSS Templates 1" title="Website Templates 1"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/02.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/02.jpg') }}"
                                             alt="CSS Templates 2" title="Website Templates 2"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/03.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/03.jpg') }}"
                                             alt="CSS Templates 3" title="Website Templates 3"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/04.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/04.jpg') }}"
                                             alt="CSS Templates 4" title="Website Templates 4"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/05.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/05.jpg') }}"
                                             alt="Flash Templates 1" title="Flash Templates 1"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/06.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/06.jpg') }}"
                                             alt="Flash Templates 2" title="Flash Templates 2"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/07.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/07.jpg') }}"
                                             alt="Flash Templates 3" title="Flash Templates 3"/></a>
-            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset('images/slider/08.jpg') }}"
+            <a href="#" rel="lightbox"><img class="cloudcarousel" src="{{ asset(env('THEME').'/images/slider/08.jpg') }}"
                                             alt="Flash Templates 4" title="Flash Templates 4"/></a>
         </div>
 

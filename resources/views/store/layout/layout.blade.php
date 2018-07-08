@@ -1,30 +1,29 @@
-@extends('store.layout.base')
-
-@section('header')
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Склад</title>
-@endsection
+@extends(env('THEME').'.layout.base')
 
 @section('css')
-    @include('store.layout.css')
+    @include(env('THEME').'.layout.css')
 @endsection
 
 @section('carousel')
-    @include('store.layout.carousel')
+    @include(env('THEME').'.layout.carousel')
 @endsection
 
 @section('slider')
-    @include('store.layout.carousel')
+    @include(env('THEME').'.layout.carousel')
 @endsection
 
 @section('navbar')
-    @include('store.layout.menu')
+    @include(env('THEME').'.layout.menu')
+@endsection
+
+@section('social')
+    @include(( env('THEME').'.layout.social' ))
 @endsection
 
 @section('footer')
-    @include('store.layout.footer')
+    @include(env('THEME').'.layout.footer')
 @endsection
 
 @section('js')
-    @include('store.layout.js')
+    @include(env('THEME').'.layout.js')
 @endsection
