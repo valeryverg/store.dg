@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableMenuItems extends Migration
+class CreateTableOperations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateTableMenuItems extends Migration
      */
     public function up()
     {
-        Schema::create('menu_items', function (Blueprint $table) {
+        Schema::create('operations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('link');
-            $table->string('action');
-            $table->integer('sort_by');
-            $table->integer('parent_id');
-            $table->integer('id_role');
+            $table->date('date_oper');
+            $table->integer('amount');
+            $table->integer('material_id');
+            $table->integer('type_id');
+            $table->integer('user_id');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -33,6 +32,6 @@ class CreateTableMenuItems extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu_items');
+        Schema::dropIfExists('operations');
     }
 }
