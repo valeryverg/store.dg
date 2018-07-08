@@ -1,8 +1,4 @@
-@extends('store.layout')
-
-@section('navbar')
-    @include('store.menu')
-@endsection
+@extends('store.layout.layout')
 
 @section('content')
     <div id="templatemo_main">
@@ -43,7 +39,4 @@
 
         <div class="cleaner"></div>
     </div> <!-- END of templatemo_main -->
-@endsection
-
-@section('bottom')
 @endsection

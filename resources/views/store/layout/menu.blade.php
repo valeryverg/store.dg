@@ -1,4 +1,4 @@
-@extends('store.base')
+@extends('store.layout.base')
 
 @section('navbar')
 <nav class="navbar navbar-default">
