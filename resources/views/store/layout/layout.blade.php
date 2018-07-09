@@ -8,6 +8,10 @@
     @include(env('THEME').'.layout.carousel')
 @endsection
 
+@section('js')
+    @include(env('THEME').'.layout.js')
+@endsection
+
 @section('slider')
     @include(env('THEME').'.layout.carousel')
 @endsection
@@ -24,6 +28,3 @@
     @include(env('THEME').'.layout.footer')
 @endsection
 
-@section('js')
-    @include(env('THEME').'.layout.js')
-@endsection

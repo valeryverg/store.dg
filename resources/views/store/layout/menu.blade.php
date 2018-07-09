@@ -25,10 +25,11 @@
                     </div>
                     <button type="submit" class="btn btn-default">Пошук...</button>
                 </form>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {{--</div>--}}
+            {{--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">--}}
                 <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
+                {{--<ul class="navbar-nav mr-auto">--}}
                     <!-- Authentication Links -->
                     @guest
                     <li class="nav-item">
